@@ -1,0 +1,23 @@
+html {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	width: 600px;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchContainer {
+	width: 400px;
+	height: 400px;
+}
+ul {
+	height: 50px;
+}

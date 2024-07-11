@@ -1,0 +1,34 @@
+Initial thoughts: 
+1. Gradient background
+2. Check if string contains another string.
+3. Constantly looping though data looking for matches as user types.
+
+Step 1: Planning.
+- What HTML would you use for the search bar? How about the drop down, the search button, and the filler text which will appear on the page?
+    1. An input inside a div, with a placeholder inside the input.
+    2. Use a button. Should place input and button inside the same form.
+    3. Use an h1 called "Fruit Search", change font to Concert One.
+    4. link to dropdown : https://www.w3schools.com/howto/howto_js_filter_dropdown.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS.
+
+
+- What CSS would you use to create the color gradient on the page?
+    1. #grad background: rgb(250,94,0);
+        background: linear-gradient(90deg, rgba(250,94,0,1) 0%, rgba(0,217,217,1) 100%);
+
+- What type of JavaScript event listeners would you need to add to refresh the drop-down as a user types?
+    1. object.addEventListener("input", myScript); I'll need to access this value.
+    2. Dropdown needs to appear only when user has typed something. The event should trigger the creation of a new element in the DOM.
+    3. Take that inner text and check if database contains that inner text. If that returns true, display it in the dropdown. 
+
+- How would you populate the search bar with an option from the drop down list? What event would trigger this action?
+    1. Add an event listener to each dropdown item.(These should be divs.) When user clicks the item, set the search input's inner text to be the same as the dropdown's inner text, then delete or disable the dropdown.
+
+- How would you structure your functions?
+    1. place callback functions in a different file.
+    2. Use arrow functions when simple. 
+    3. Make functions as simple as possible, even if I have to write more of them to make things easier to read and understand.
+
+Objective 1: Search Bar. 
+
+
+Think about functions in inputs and outputs. Test for simpler inputs and see if they work!
