@@ -109,10 +109,11 @@ function showSuggestions(arr) {
 	suggestions.innerHTML = ``;
 
 	arr.forEach(function(val) {
-		li = document.createElement(`li`);
-		li.innerText = val;
-		suggestions.appendChild(li);
-		li.addEventListener(`click`, (event) => {
+		div = document.createElement(`div`);
+		div.setAttribute(`class`, `listItems`);
+		div.innerText = val;
+		suggestions.appendChild(div);
+		div.addEventListener(`click`, (event) => {
 			let clickValue = event.target.innerText;
 			input.value = clickValue;
 			if (input.value === clickValue) {
